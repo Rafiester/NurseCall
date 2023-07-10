@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+    android:gravity="center">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/helvetica_regular"
+        android:text="Nurse Call"
+        android:textStyle="bold"
+        android:textSize="@dimen/_40sdp"
+        android:textAlignment="center"
+        android:includeFontPadding="false" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Helping patient for communicate more easier to nurse more faster "
+        android:fontFamily="@font/helvetica_light"
+        android:textAlignment="center"
+        android:textSize="@dimen/_8ssp"
+        android:layout_marginHorizontal="@dimen/_67sdp"
+        android:includeFontPadding="false" />
+
+</LinearLayout>

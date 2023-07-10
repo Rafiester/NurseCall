@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/pastel_green">
+
+    <!-- Top Layout -->
+    <LinearLayout
+        android:id="@+id/top_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="@dimen/_16sdp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="LOGIN"
+            android:textColor="@color/pastel_green2"
+            android:textAllCaps="true"
+            android:textSize="@dimen/_30ssp"
+            android:textStyle="bold"
+            android:fontFamily="@font/poppins_medium"
+            android:includeFontPadding="false"
+            android:paddingTop="@dimen/_50sdp"/>
+    </LinearLayout>
+
+    <!-- Middle Layout -->
+    <LinearLayout
+        android:id="@+id/mid_layout"
+        android:layout_below="@+id/top_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:layout_marginHorizontal="@dimen/_16sdp"
+        android:orientation="vertical">
+
+        <!-- Username Layout -->
+        <RelativeLayout
+            android:id="@+id/mid1_layout"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_52sdp">
+
+            <EditText
+                android:id="@+id/et_username"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="@dimen/_15sdp"
+                android:background="@drawable/ic_border"
+                android:textSize="@dimen/_12ssp"
+                android:inputType="text"
+                android:paddingLeft="@dimen/_10sdp"
+                android:hint="Username"
+                android:drawableLeft="@drawable/ic_person"
+                android:drawablePadding="@dimen/_3sdp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/pastel_green"
+                android:text="Enter Username"
+                android:textSize="@dimen/_11ssp"
+                android:fontFamily="@font/helvetica_regular"
+                android:paddingLeft="@dimen/_3sdp"
+                android:paddingRight="@dimen/_3sdp"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:layout_marginTop="@dimen/_7sdp"/>
+        </RelativeLayout>
+
+        <!-- Password Layout -->
+        <RelativeLayout
+            android:id="@+id/mid2_layout"
+            android:layout_below="@+id/mid1_layout"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_52sdp">
+
+            <EditText
+                android:id="@+id/et_password"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="@dimen/_15sdp"
+                android:background="@drawable/ic_border"
+                android:textSize="@dimen/_12ssp"
+                android:inputType="textPassword"
+                android:paddingLeft="@dimen/_10sdp"
+                android:hint="Username"
+                android:drawableLeft="@drawable/ic_lock"
+                android:drawablePadding="@dimen/_3sdp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/pastel_green"
+                android:text="Enter Password"
+                android:textSize="@dimen/_11ssp"
+                android:fontFamily="@font/helvetica_regular"
+                android:paddingLeft="@dimen/_3sdp"
+                android:paddingRight="@dimen/_3sdp"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:layout_marginTop="@dimen/_7sdp"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/mid3_layout"
+            android:layout_below="@+id/mid2_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_15sdp"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:layout_marginEnd="@dimen/_10sdp">
+
+            <CheckBox
+                android:id="@+id/cb_login"
+                android:layout_width="@dimen/_20sdp"
+                android:layout_height="@dimen/_20sdp"/>
+
+            <TextView
+                android:id="@+id/tv_remember"
+                android:layout_toRightOf="@id/cb_login"
+                android:layout_marginTop="@dimen/_2sdp"
+                android:layout_marginLeft="@dimen/_5sdp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Remember Me"
+                android:textSize="@dimen/_10ssp"/>
+
+            <TextView
+                android:layout_toRightOf="@id/tv_remember"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Forget Password"
+                android:textSize="@dimen/_10ssp"
+                android:layout_marginTop="@dimen/_2sdp"
+                android:gravity="end" />
+
+        </RelativeLayout>
+    </LinearLayout>
+
+    <!-- Button -->
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/mb_login"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_40sdp"
+        android:layout_below="@+id/mid_layout"
+        android:layout_marginStart="@dimen/_16sdp"
+        android:layout_marginTop="@dimen/_16sdp"
+        android:layout_marginEnd="@dimen/_16sdp"
+        android:layout_marginBottom="@dimen/_16sdp"
+        android:fontFamily="@font/helvetica_regular"
+        android:text="Login"
+        android:textSize="@dimen/_15ssp"
+        app:backgroundTint="@color/pastel_green2" />
+
+</RelativeLayout>

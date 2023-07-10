@@ -1,0 +1,18 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+<!--    <style name="Base.Theme.FarhanProject_NurseCall" parent="Theme.Material3.DayNight.NoActionBar">-->
+<!--        &lt;!&ndash; Customize your light theme here. &ndash;&gt;-->
+<!--        &lt;!&ndash; <item name="colorPrimary">@color/my_light_primary</item> &ndash;&gt;-->
+<!--    </style>-->
+    <style name="AppTheme" parent="Theme.MaterialComponents.Light.NoActionBar.Bridge">
+        <item name="colorPrimary">@color/pastel_green</item>
+        <item name="colorPrimaryDark">@color/pastel_green2</item>
+        <item name="colorAccent">@color/pastel_green</item>
+    </style>
+
+<!--    <style name="Theme.FarhanProject_NurseCall" parent="Base.Theme.FarhanProject_NurseCall" />-->
+
+
+    <!-- Additional Themes -->
+
+</resources>
