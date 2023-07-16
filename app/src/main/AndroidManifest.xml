@@ -14,6 +14,8 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         android:usesCleartextTraffic="true">
+        <service android:name=".util.NotificationService" />
+        <receiver android:name=".util.NotificationBroadcastReceiver" />
         <activity
             android:name=".SplashActivity"
             android:exported="true">
@@ -33,6 +35,8 @@
         <activity
             android:name=".MainActivity"
             android:exported="false"/>
+
+
     </application>
 
 </manifest>

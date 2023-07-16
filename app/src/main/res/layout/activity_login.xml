@@ -54,7 +54,9 @@
                 android:paddingLeft="@dimen/_10sdp"
                 android:hint="Username"
                 android:drawableLeft="@drawable/ic_person"
-                android:drawablePadding="@dimen/_3sdp" />
+                android:drawablePadding="@dimen/_3sdp"
+                android:cursorVisible="true"
+                android:textCursorDrawable="@null"/>
 
             <TextView
                 android:layout_width="wrap_content"
@@ -87,7 +89,9 @@
                 android:paddingLeft="@dimen/_10sdp"
                 android:hint="Username"
                 android:drawableLeft="@drawable/ic_lock"
-                android:drawablePadding="@dimen/_3sdp" />
+                android:drawablePadding="@dimen/_3sdp"
+                android:cursorVisible="true"
+                android:textCursorDrawable="@null"/>
 
             <TextView
                 android:layout_width="wrap_content"
@@ -107,14 +111,13 @@
             android:layout_below="@+id/mid2_layout"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="@dimen/_15sdp"
-            android:layout_marginStart="@dimen/_10sdp"
-            android:layout_marginEnd="@dimen/_10sdp">
+            android:layout_marginTop="@dimen/_15sdp">
 
             <CheckBox
                 android:id="@+id/cb_login"
                 android:layout_width="@dimen/_20sdp"
-                android:layout_height="@dimen/_20sdp"/>
+                android:layout_height="@dimen/_20sdp"
+                android:buttonTint="@color/pastel_green2"/>
 
             <TextView
                 android:id="@+id/tv_remember"
@@ -144,9 +147,8 @@
         android:layout_width="match_parent"
         android:layout_height="@dimen/_40sdp"
         android:layout_below="@+id/mid_layout"
-        android:layout_marginStart="@dimen/_16sdp"
+        android:layout_marginHorizontal="@dimen/_16sdp"
         android:layout_marginTop="@dimen/_16sdp"
-        android:layout_marginEnd="@dimen/_16sdp"
         android:layout_marginBottom="@dimen/_16sdp"
         android:fontFamily="@font/helvetica_regular"
         android:text="Login"
